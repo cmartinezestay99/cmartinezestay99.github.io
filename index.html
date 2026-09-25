@@ -1,6 +1,14 @@
-<!doctype html>
-<html lang="es">
-<head>
+<!-- KaTeX para renderizar LaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });"></script>
+</head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Camilo Martínez Estay: álgebra, combinatoria y programas de investigación matemática.">
@@ -51,7 +59,7 @@
 
         <p class="lead">Soy estudiante de Magíster en Matemáticas en la Universidad de Valparaíso bajo la dirección de Diego Lobos Maturana, con el apoyo de la Beca de Magíster Nacional ANID. Previamente obtuve mi Licenciatura en Matemáticas en la Pontificia Universidad Católica de Valparaíso (2024).</p>
         
-        <p>Mi trabajo se centra en el álgebra, particularmente en la teoría de representaciones, la combinatoria algebraica y los grupos de Coxeter. Actualmente estudio invariantes combinatorios para clases de isomorfismo de álgebras graduadas en la categoría <math><mi>NT</mi></math>, apoyándome en herramientas computacionales (Python) para explorar ejemplos y formular conjeturas.</p>
+        <p>Mi trabajo se centra en el álgebra, particularmente en la teoría de representaciones, la combinatoria algebraica y los grupos de Coxeter. Actualmente estudio invariantes combinatorios para clases de isomorfismo de álgebras graduadas en la categoría $\mathcal{NT}$, apoyándome en herramientas computacionales (Python) para explorar ejemplos y formular conjeturas.</p>
         
         <p>Además de mi investigación, participo activamente en docencia universitaria y coorganizo el seminario estudiantil <a href="activities.html#puerto">Puerto de Matemática</a> en la UV. Para más detalles sobre mi trayectoria, puedes revisar mi <a href="cv.html">CV académico</a> o descargar la <a href="https://drive.google.com/file/d/1pkO394jAqezGhgAc2yFn_vWZ9fTMKPZ3/view">versión en inglés (PDF)</a>.</p>
       </section>
