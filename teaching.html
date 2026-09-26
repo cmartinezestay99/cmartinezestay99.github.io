@@ -1,8 +1,120 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Camilo Martínez Estay: álgebra, combinatoria y programas de investigación matemática."><title>Docencia · Camilo Martínez Estay</title><link rel="stylesheet" href="styles.css?v=6"><link rel="stylesheet" href="theme.css?v=4"></head>
-<body><a class="skip" href="#main">Saltar al contenido</a><header><nav aria-label="Navegación principal"><a href="index.html">Sobre mí</a><a href="research.html">Investigación</a><a href="teaching.html" aria-current="page">Docencia</a><a href="resources.html">Notas</a><a href="programs.html">Programas</a><a href="activities.html">Actividades</a></nav></header><div class="site-layout"><aside class="profile" aria-label="Perfil y contacto"><span class="portrait-frame"><img class="portrait" src="assets/camilo-martinez-estay.png" alt="Retrato de Camilo Martínez Estay" width="1086" height="1448"></span><a class="profile-name" href="index.html">Camilo<br> Martínez Estay</a><p class="profile-role">Estudiante de Magíster en Matemáticas<br>Universidad de Valparaíso</p><p class="profile-topics">Álgebra · Combinatoria<br>Computación matemática</p><div class="profile-links"><a href="cv.html">CV académico</a><a href="https://github.com/cmartinezestay99">GitHub ↗</a><a href="mailto:camilo.martinez@postgrado.uv.cl">Correo electrónico ↗</a></div><div class="sidebar-seminar"><span class="eyebrow">Comunidad</span><h2>Puerto de Matemática</h2><p>Seminario estudiantil · UV</p><a href="https://www.instagram.com/seminario.uv/">@seminario.uv ↗</a></div></aside><main id="main"><h1>Docencia</h1>
-<p>Me interesa que los estudiantes descubran las ideas matemáticas mediante ejemplos, preguntas y resolución de problemas. Priorizo la comprensión conceptual y procuro construir espacios inclusivos.</p>
-<h2>Universidad de Valparaíso</h2><h3>Taller de Pensamiento Lógico Matemático II</h3><p>Docente del curso LIMA 215, en la Licenciatura en Matemáticas, durante 2025. Mi trabajo incluyó la planificación del curso, el diseño de evaluaciones y la elaboración del apunte oficial.</p>
-<p><a href="lima215.html">Archivo de LIMA215 · Primer semestre de 2025</a><br><span class="muted">Programa, apuntes, contenidos y bibliografía.</span></p><h2>Pontificia Universidad Católica de Valparaíso</h2><h3>Ayudantías, 2019–2021</h3><ul><li>Fundamentos de la Matemática.</li><li>Cálculo I.</li><li>Geometría Analítica y Vectorial.</li><li>Álgebra.</li></ul><h3>Tutorías e inclusión, 2022</h3><p>Fui tutor académico en programas de acompañamiento a estudiantes de primer año y en PUCV Inclusiva, con apoyo a estudiantes de ingeniería con discapacidad.</p>
-<h2>Apuntes y presentaciones</h2><p>Mis notas de Teoría de Conjuntos y las presentaciones sobre Ehrhart y productos tensoriales están reunidas en <a href="resources.html">Notas y recursos</a>.</p><h2>Materiales educativos</h2><p>Entre 2023 y 2024 trabajé en EDUGAMI en el diseño, revisión y control de calidad de más de 360 ítems, guías y explicaciones para las pruebas PAES Matemática M1 y M2.</p>
-</main></div><footer><a href="index.html">Camilo Martínez Estay</a><span>Universidad de Valparaíso</span><a href="mailto:camilo.martinez@postgrado.uv.cl">Correo</a><a href="https://github.com/cmartinezestay99">GitHub</a><a href="#main">Volver arriba ↑</a><span>Actualizado en septiembre de 2026</span></footer></body></html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Camilo Martínez Estay: álgebra, combinatoria y programas de investigación matemática.">
+  <title>Docencia · Camilo Martínez Estay</title>
+  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="theme.css?v=4">
+
+  <!-- KaTeX para renderizar LaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ],
+        throwOnError: false
+      });
+    });
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="index.html">Sobre mí</a>
+      <a href="research.html">Investigación</a>
+      <a href="teaching.html" aria-current="page">Docencia</a>
+      <a href="resources.html">Notas</a>
+      <a href="programs.html">Programas</a>
+      <a href="activities.html">Actividades</a>
+    </nav>
+  </header>
+
+  <div class="site-layout">
+    <aside class="profile" aria-label="Perfil y contacto">
+      <span class="portrait-frame">
+        <img class="portrait" src="assets/camilo-martinez-estay.png" alt="Retrato de Camilo Martínez Estay" width="1086" height="1448">
+      </span>
+      <a class="profile-name" href="index.html">Camilo<br> Martínez Estay</a>
+      <p class="profile-role">Estudiante de Magíster en Matemáticas<br>Universidad de Valparaíso</p>
+      <p class="profile-topics">Álgebra · Combinatoria<br>Computación matemática</p>
+      <div class="profile-links">
+        <a href="cv.html">CV académico</a>
+        <a href="https://github.com/cmartinezestay99">GitHub ↗</a>
+        <a href="mailto:camilo.martinez@postgrado.uv.cl">Correo electrónico ↗</a>
+      </div>
+      <div class="sidebar-seminar">
+        <span class="eyebrow">Comunidad</span>
+        <h2>Puerto de Matemática</h2>
+        <p>Seminario estudiantil · UV</p>
+        <a href="https://www.instagram.com/seminario.uv/">@seminario.uv ↗</a>
+      </div>
+    </aside>
+
+    <main id="main">
+      <h1>Docencia</h1>
+
+      <section id="catedra">
+        <h2>Cátedra</h2>
+        <h3>LIMA 215 · Taller de Pensamiento Lógico Matemático II: Teoría de Conjuntos</h3>
+        <p>
+          <strong>Universidad de Valparaíso</strong> · Licenciatura en Matemáticas (primer semestre de 2025).<br>
+          Diseño del curso, evaluaciones y redacción del apunte oficial.
+        </p>
+        <p>
+          <a href="lima215.html">Archivo del curso</a>
+          <span class="muted">· Programa, apuntes y bibliografía.</span>
+        </p>
+      </section>
+
+      <section id="ayudantias">
+        <h2>Ayudantías</h2>
+        <p><strong>Pontificia Universidad Católica de Valparaíso</strong> (2019–2020)</p>
+        <ul>
+          <li>Fundamentos de la Matemática · <span class="muted">Ingeniería de Ejecución en Informática</span></li>
+          <li>Cálculo I · <span class="muted">Pedagogía y Licenciatura en Matemáticas</span></li>
+          <li>Geometría Analítica y Vectorial · <span class="muted">Pedagogía y Licenciatura en Matemáticas</span></li>
+          <li>Álgebra · <span class="muted">Pedagogía y Licenciatura en Matemáticas</span></li>
+        </ul>
+      </section>
+
+      <section id="tutorias">
+        <h2>Tutorías académicas</h2>
+        <p>
+          <strong>Pontificia Universidad Católica de Valparaíso</strong> (primer semestre de 2022).<br>
+          Tutor académico en el Plan de Fortalecimiento de la Formación Inicial Docente y en el programa PUCV Inclusiva para estudiantes de la Facultad de Ingeniería.
+        </p>
+      </section>
+
+      <section id="materiales">
+        <h2>Otros materiales y proyectos</h2>
+        <ul>
+          <li>
+            <strong>Apuntes y exposiciones.</strong> Notas de Teoría de Conjuntos y presentaciones disponibles en la sección <a href="resources.html">Notas</a>.
+          </li>
+          <li>
+            <strong>Evaluación educacional (2023–2024).</strong> Diseño y revisión técnica de material e ítems para pruebas tipo PAES Matemática M1 y M2 en EDUGAMI S.A.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <a href="index.html">Camilo Martínez Estay</a>
+    <span>Universidad de Valparaíso</span>
+    <a href="mailto:cmartinezestay99@gmail.com">Correo personal</a>
+    <a href="mailto:camilo.martinez@postgrado.uv.cl">Correo</a>
+    <a href="https://github.com/cmartinezestay99">GitHub</a>
+    <a href="#main">Volver arriba ↑</a>
+    <span>Actualizado en septiembre de 2026</span>
+  </footer>
+</body>
+</html>
