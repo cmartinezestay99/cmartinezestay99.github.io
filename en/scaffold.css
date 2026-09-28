@@ -1,0 +1,5 @@
+/* Marcadores de escritura: se pueden retirar cuando completes los textos. */
+.writing-placeholder{color:var(--muted);font-style:italic}
+main .writing-placeholder{min-height:3rem;border-left:2px solid var(--line);padding-left:14px}
+.profile .writing-placeholder{font-size:12px}
+@media print{.writing-placeholder{color:#666}}
