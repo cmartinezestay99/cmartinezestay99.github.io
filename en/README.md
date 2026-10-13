@@ -33,6 +33,8 @@ se convierte en:
 
 4. Guarda con Commit changes. GitHub Pages actualizará el sitio.
 
-Los datos del perfil lateral se repiten en los ocho HTML. La foto, el diseño base y los enlaces de contacto se comparten con la versión española. Cada página inglesa muestra “English version · In progress”; puedes quitar esa línea al terminarla. Añade enlaces reales a tus materiales cuando estén listos.
+Las ocho páginas comparten el encabezado textual, el diseño y los enlaces de contacto. No incluyen fotografía: esta aparece solo en `index.html` de la raíz. Cada página inglesa muestra “English draft · In progress”; puedes quitar esa línea al terminarla. Añade enlaces reales a tus materiales cuando estén listos.
 
 `../styles.css` y `../theme.css` controlan el diseño compartido. `scaffold.css` solo da formato a los marcadores. No hay contenido redactado automáticamente sobre tu trayectoria o tus proyectos en esta versión.
+
+Los avisos de borrador enlazan la versión española y el CV completo en inglés. Se conservan tus marcadores para redactar personalmente. Quita `noindex, follow` y los avisos cuando la traducción esté terminada y revisada.

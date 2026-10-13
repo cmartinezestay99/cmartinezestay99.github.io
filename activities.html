@@ -3,31 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Camilo Martínez Estay: álgebra, combinatoria y programas de investigación matemática.">
+  <meta name="description" content="Charlas, escuelas y actividades académicas de Camilo Martínez Estay. Seminario estudiantil Puerto de Matemática.">
   <title>Actividades · Camilo Martínez Estay</title>
-  <link rel="stylesheet" href="styles.css?v=6">
-  <link rel="stylesheet" href="theme.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="theme.css?v=5">
+<link rel="stylesheet" href="language.css?v=2">
+<link rel="canonical" href="https://cmartinezestay99.github.io/activities.html">
 
-  <!-- KaTeX para renderizar LaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body, {
-        delimiters: [
-          {left: "$$", right: "$$", display: true},
-          {left: "$", right: "$", display: false}
-        ],
-        throwOnError: false
-      });
-    });
-  </script>
-<link rel="stylesheet" href="language.css?v=1">
+  <script defer src="math.js?v=1"></script>
 </head>
 <body>
   <a class="skip" href="#main">Saltar al contenido</a>
   <header>
+    <a class="site-name" href="index.html">Camilo Martínez Estay</a>
     <nav aria-label="Navegación principal">
       <a href="index.html">Sobre mí</a>
       <a href="research.html">Investigación</a>
@@ -35,34 +26,17 @@
       <a href="resources.html">Notas</a>
       <a href="programs.html">Programas</a>
       <a href="activities.html" aria-current="page">Actividades</a>
-    <span class="language-switch" role="group" aria-label="Idioma"><span lang="es" aria-current="true">Español</span><a href="en/activities.html" lang="en" hreflang="en">English</a></span>
+    <a href="cv.html">CV</a>
+      <span class="language-switch" role="group" aria-label="Idioma"><span lang="es" aria-current="true">Español</span><a href="en/activities.html" lang="en" hreflang="en">English <small>(borrador)</small></a></span>
 </nav>
   </header>
 
   <div class="site-layout">
-    <aside class="profile" aria-label="Perfil y contacto">
-      <span class="portrait-frame">
-        <img class="portrait" src="assets/camilo-martinez-estay.png" alt="Retrato de Camilo Martínez Estay" width="1086" height="1448">
-      </span>
-      <a class="profile-name" href="index.html">Camilo<br> Martínez Estay</a>
-      <p class="profile-role">Estudiante de Magíster en Matemáticas<br>Universidad de Valparaíso</p>
-      <p class="profile-topics">Álgebra · Combinatoria<br>Computación matemática</p>
-      <div class="profile-links">
-        <a href="cv.html">CV académico</a>
-        <a href="https://github.com/cmartinezestay99">GitHub ↗</a>
-        <a href="mailto:camilo.martinez@postgrado.uv.cl">Correo electrónico ↗</a>
-      </div>
-      <div class="sidebar-seminar">
-        <span class="eyebrow">Comunidad</span>
-        <h2>Puerto de Matemática</h2>
-        <p>Seminario estudiantil · UV</p>
-        <a href="https://www.instagram.com/seminario.uv/">@seminario.uv ↗</a>
-      </div>
-    </aside>
 
-    <main id="main">
+
+    <main id="main" tabindex="-1">
       <h1>Charlas y actividades</h1>
-      
+
       <div class="page-index" aria-label="Contenido">
         <a href="#charlas">Charlas</a>
         <a href="#puerto">Seminario</a>
@@ -93,11 +67,11 @@
       <h2 id="escuelas">Escuelas y encuentros seleccionados</h2>
       <ul>
         <li>
-          <strong>Agosto de 2026.</strong> XXV Coloquio Latinoamericano de Álgebra, Pontificia Universidad Católica del Perú (PUCP), Lima, Perú. 
+          <strong>Agosto de 2026.</strong> XXV Coloquio Latinoamericano de Álgebra, Pontificia Universidad Católica del Perú (PUCP), Lima, Perú.
           <span class="muted">[<a href="https://imuv.uv.cl/noticias/100-not-240826" target="_blank" rel="noopener">Noticia IMUV ↗</a>]</span>
         </li>
         <li>
-          <strong>Junio – julio de 2026.</strong> <a href="https://www.matcuer.unam.mx/ResearchSchool/index.html" target="_blank" rel="noopener">Second Research School in Geometry at Cuernavaca</a>, UNAM, México. Estancia de dos semanas financiada por el Programa Simons-UNAM. 
+          <strong>Junio – julio de 2026.</strong> <a href="https://www.matcuer.unam.mx/ResearchSchool/index.html" target="_blank" rel="noopener">Second Research School in Geometry at Cuernavaca</a>, UNAM, México. Estancia de dos semanas financiada por el Programa Simons-UNAM.
           <span class="muted">[<a href="https://imuv.uv.cl/noticias/82-estudiante-del-magister-en-matematicas-imuv-participa-en-escuela-de-investigacion-geometrica-en-mexico" target="_blank" rel="noopener">Noticia IMUV ↗</a>]</span>
         </li>
         <li><strong>Octubre de 2025.</strong> V Escuela de Doctorado en Matemáticas, Valparaíso.</li>
@@ -116,7 +90,7 @@
     <a href="mailto:camilo.martinez@postgrado.uv.cl">Correo</a>
     <a href="https://github.com/cmartinezestay99">GitHub</a>
     <a href="#main">Volver arriba ↑</a>
-    <span>Actualizado en septiembre de 2026</span>
+    <span>Actualizado en octubre de 2026</span>
   </footer>
 </body>
 </html>

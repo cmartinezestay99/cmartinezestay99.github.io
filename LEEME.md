@@ -45,7 +45,7 @@ Para enlazar un repositorio real desde Programas:
 <a href="https://github.com/cmartinezestay99/NOMBRE-REAL">Código en GitHub</a>
 ```
 
-El menú, el perfil lateral y el pie están repetidos en los ocho HTML. Si cambias el correo, el nombre o la navegación, actualízalos en todos los archivos. La foto se comparte y basta sustituir el archivo conservando su nombre; su encuadre puede necesitar un ajuste en CSS.
+El encabezado, el menú y el pie se mantienen en los 16 HTML (ocho españoles y ocho borradores ingleses). El perfil con fotografía existe únicamente en `index.html` de la raíz. No añadas retratos a las páginas interiores ni a `en/index.html`. El original se conserva en `assets/camilo-martinez-estay.png`; el encuadre se controla en CSS.
 
 ## Trabajar con ayuda
 
@@ -64,4 +64,12 @@ Mantén la web en este repositorio y cada proyecto de investigación en su propi
 - [Subir archivos](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
 - [Editar archivos en GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
 
-Versión actual: ocho páginas, sin la sección Exploraciones. No se ha publicado todavía.
+Estructura actual: ocho páginas españolas y ocho borradores ingleses. El sitio está publicado; un cambio local requiere integración y despliegue para aparecer en GitHub Pages.
+
+## Verificar antes de publicar
+
+Ejecuta `python tools/check_site.py` para revisar enlaces locales, anclas, navegación y la exclusividad de la fotografía. Abre una vista previa con `python -m http.server 8765` y visita http://127.0.0.1:8765/. Comprueba escritorio, tablet y móvil.
+
+`styles.css` contiene las reglas base y de impresión; `theme.css`, la paleta y distribución; `language.css`, el selector de idioma. `math.js` inicia KaTeX 0.16.11 y solo se carga en páginas que contienen fórmulas. No hay compilación ni dependencias de desarrollo obligatorias.
+
+Los borradores ingleses conservan los ejercicios de redacción y tienen `noindex, follow`. Al terminarlos, revisa contenido y enlaces, retira esa metaetiqueta y actualiza los avisos de borrador.
