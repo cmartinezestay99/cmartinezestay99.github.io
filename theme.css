@@ -10,8 +10,8 @@
   --font-title: Georgia, "Times New Roman", serif;
   --font-text: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
-body { background: var(--paper); color: var(--ink); font-family: var(--font-text); font-size: 1rem; line-height: 1.75; }
-header, footer { max-width: 1000px; margin-inline: auto; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-text); font-size: 1rem; line-height: 1.65; }
+header, footer { max-width: 808px; margin-inline: auto; }
 header { padding: 2rem 1.5rem 0; }
 .site-name, .site-name:visited { display: inline-block; color: var(--ink); font: 1.7rem/1.3 var(--font-title); text-decoration: none; margin-bottom: 1.2rem; }
 nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem 1.35rem; border-bottom: 1px solid var(--line); padding-bottom: .8rem; }
@@ -19,7 +19,7 @@ nav > a { display: inline-block; padding-block: .35rem; font-size: .875rem; text
 nav a, nav a:visited { color: var(--muted); }
 nav a:hover, nav a[aria-current="page"] { color: var(--link); }
 nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .5rem; }
-.site-layout { max-width: 808px; padding: 2.5rem 1.5rem 1rem; margin: 0 auto; }
+.site-layout { max-width: 808px; padding: 2rem 1.5rem 1rem; margin: 0 auto; }
 main { min-width: 0; }
 h1 { color: var(--link); }
 .lead { font-size: 1.075rem; }
@@ -35,19 +35,17 @@ h1 { color: var(--link); }
 .course-subtitle { font-family: var(--font-title); font-size: 1.5rem; line-height: 1.4; }
 .resource-list li { margin-bottom: 1.25rem; }
 .draft-notice { border-left: 2px solid var(--line); padding: .5rem 0 .5rem 1rem; color: var(--muted); font-size: .875rem; }
-footer { display: flex; flex-wrap: wrap; gap: .35rem 1.25rem; padding: 1.25rem 0 2rem; width: calc(100% - 3rem); max-width: 952px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
+footer { display: flex; flex-wrap: wrap; gap: .35rem 1.25rem; padding: 1rem 0 2rem; width: calc(100% - 3rem); max-width: 760px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
 footer a, footer a:visited { color: var(--muted); }
-footer span:last-child { flex-basis: 100%; margin-top: .25rem; }
-/* Only the Spanish home page contains the portrait and contact column. */
-.home .site-layout { max-width: 1000px; display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 3rem; }
-.profile { font-size: .875rem; line-height: 1.65; }
-.portrait-frame { display: block; position: relative; width: 160px; height: 180px; overflow: hidden; margin: .35rem 0 1.25rem; }
+/* The portrait belongs to the introduction, not a repeated profile column. */
+.portrait-frame { float: right; display: block; position: relative; width: 120px; height: 144px; overflow: hidden; margin: 0 0 1rem 1.75rem; }
 .portrait-frame .portrait { position: absolute; width: 165%; max-width: none; height: auto; left: -51%; top: -30%; }
-.profile-role { margin-bottom: 1rem; }
-.profile-topics { color: var(--muted); font-size: .8rem; }
-.profile-links { display: flex; flex-direction: column; gap: .35rem; }
+.home .current { clear: both; }
+.cv-entries { list-style: none; padding: 0; }
+.cv-entries li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1.25rem; padding: 0; margin-bottom: 1.2rem; }
+.cv-date { font-size: .875rem; color: var(--muted); }
+.cv-page h2 { font-size: 1.4rem; }
 @media (max-width: 800px) {
-  .home .site-layout { gap: 2rem; grid-template-columns: 160px minmax(0, 1fr); }
   .language-switch { flex-basis: 100%; }
 }
 @media (max-width: 600px) {
@@ -55,15 +53,15 @@ footer span:last-child { flex-basis: 100%; margin-top: .25rem; }
   .site-name { font-size: 1.4rem; margin-bottom: .8rem; }
   nav { gap: .15rem 1rem; }
   nav > a { padding-block: .4rem; }
-  .site-layout { padding: 1.75rem 1.25rem .75rem; }
-  .home .site-layout { display: flex; flex-direction: column; gap: 1.5rem; }
-  .profile { display: grid; grid-template-columns: 90px minmax(0, 1fr); column-gap: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
-  .portrait-frame { width: 90px; height: 105px; grid-row: 1 / 4; margin: 0; }
-  .profile-role { margin-bottom: .5rem; }
-  .profile-topics { display: none; }
-  .profile-links { flex-direction: row; flex-wrap: wrap; gap: .2rem .75rem; font-size: .8rem; }
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  h3 { font-size: 1.2rem; }
+  .site-layout { padding: 1.5rem 1.25rem .75rem; }
+  .portrait-frame { width: 90px; height: 108px; margin-left: 1rem; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.15rem; }
+  .cv-entries li { grid-template-columns: minmax(0, 1fr); gap: .2rem; }
   footer { width: calc(100% - 2.5rem); }
+}
+@media (max-width: 380px) {
+  .home .lead { clear: both; }
+  .portrait-frame { float: none; margin: 0 0 1.25rem; }
 }
