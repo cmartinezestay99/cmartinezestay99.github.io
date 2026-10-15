@@ -73,3 +73,7 @@ Ejecuta `python tools/check_site.py` para revisar enlaces locales, anclas, naveg
 `styles.css` contiene las reglas base y de impresión; `theme.css`, la paleta y distribución; `language.css`, el selector de idioma. `math.js` inicia KaTeX 0.16.11 y solo se carga en páginas que contienen fórmulas. No hay compilación ni dependencias de desarrollo obligatorias.
 
 Los borradores ingleses conservan los ejercicios de redacción y tienen `noindex, follow`. Al terminarlos, revisa contenido y enlaces, retira esa metaetiqueta y actualiza los avisos de borrador.
+
+## Actualizar el CV
+
+El CV español descargable está en assets/cv-camilo-martinez-estay.pdf y su fuente editable en assets/cv-camilo-martinez-estay.tex. Compila la fuente en Overleaf con pdfLaTeX, revisa ambas páginas y reemplaza el PDF conservando el nombre. Actualiza también cv.html cuando cambien fechas o actividades. El enlace al CV inglés existente se mantiene por separado.
